@@ -1,0 +1,5 @@
+- [x] Update package.json: Add Prisma dependencies, tsx, and scripts for generate, push, seed.
+- [x] Create prisma/schema.prisma: Define SQLite DB and models SleepData1, SleepData2.
+- [x] Create app/api/sleepdata1/route.ts: POST handler for saving SleepData1.
+- [x] Create app/api/sleepdata2/route.ts: POST handler for saving SleepData2.
+- [x] Create prisma/seed.ts: Seed script to populate DB with sample data.

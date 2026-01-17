@@ -1,0 +1,19 @@
+-- CreateTable
+CREATE TABLE "SleepData1" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "micRMS" REAL NOT NULL,
+    "piezoPeak" REAL NOT NULL,
+    "state" INTEGER NOT NULL,
+    "timestamp" BIGINT NOT NULL,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+-- CreateTable
+CREATE TABLE "SleepData2" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "heartRate" REAL NOT NULL,
+    "spo2" REAL NOT NULL,
+    "temperature" REAL NOT NULL,
+    "timestamp" BIGINT NOT NULL,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);

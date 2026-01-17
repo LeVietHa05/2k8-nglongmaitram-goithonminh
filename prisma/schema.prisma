@@ -1,0 +1,26 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model SleepData1 {
+  id         Int      @id @default(autoincrement())
+  micRMS     Float
+  piezoPeak  Float
+  state      Int
+  timestamp  Int
+  createdAt  DateTime @default(now())
+}
+
+model SleepData2 {
+  id          Int      @id @default(autoincrement())
+  heartRate   Float
+  spo2        Float
+  temperature Float
+  timestamp   Int
+  createdAt   DateTime @default(now())
+}
