@@ -7,7 +7,7 @@ interface ITEM {
   heartRate: string,
   spo2: string,
   temperature: string,
-  timestamp: string,
+  t: string,
 }
 
 export async function GET() {
@@ -33,7 +33,7 @@ export async function POST(request: NextRequest) {
             heartRate: parseFloat(item.heartRate),
             spo2: parseFloat(item.spo2),
             temperature: parseFloat(item.temperature),
-            timestamp: Number(item.timestamp),
+            timestamp: parseInt(item.t),
           },
         })
       )
